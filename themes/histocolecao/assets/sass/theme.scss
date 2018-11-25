@@ -1,0 +1,344 @@
+:root {
+  --menu-height: 80px;
+  --primary-color: #B0007C;
+  --dark-color: #85004d;
+  --light-color: #f057a8;
+  --background-color: #FFFFFF;
+  --content-background-color: #FFFFFF;
+  --menu-text-color: #FFFFFF;
+  --content-text-color: #333333;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-color);
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+button:focus, .btn:focus {
+  outline:0;
+  box-shadow: none;
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+#nav .navbar {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+}
+
+#nav .navbar-brand img{
+  height: 60px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .5));
+}
+
+#nav .nav-item {
+  margin: 5px 15px;
+}
+
+#nav .dropdown-menu {
+  right: 0;
+  left: auto;
+  margin-bottom: .5rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+#nav .dropdown-menu .dropdown-item {
+  padding: .75rem 2rem;
+  color: var(--menu-text-color);
+}
+
+#nav .dropdown-menu .dropdown-item:hover,
+#nav .dropdown-menu .dropdown-item:focus,
+#nav .dropdown-menu .dropdown-item:active {
+  background-color: transparent;
+}
+
+#nav .nav-link {
+  color: var(--menu-text-color);
+}
+
+#nav .nav-link:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+#nav .nav-btn {
+  font-size: 1.1em;
+  color: var(--menu-text-color);
+  padding: 4px 25px;
+  background-color: var(--dark-color);
+}
+
+#nav .nav-btn:hover {
+  background-color: var(--light-color);
+}
+
+#nav .nav-btn::after {
+  content: none;
+}
+
+.index {
+  height: 100vh;
+  background: var(--light-color) url("/img/background.png") no-repeat;
+  background-size: cover;
+}
+
+.index p {
+  padding: 30px;
+  background-color: var(--primary-color);
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+#content {
+  position: relative;
+  min-height: 100vh;
+  padding: 30px 0 90px;
+}
+
+#content .about {
+  padding: 30px 0 90px;
+}
+
+#content:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--content-background-color) url("/img/microscopio.png") no-repeat fixed center;
+  background-size: 25% auto;
+  opacity: .4;
+  z-index: -1;
+}
+
+#content .header {
+  margin-bottom: 40px;
+}
+
+#content .header .title {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+#content .header .bar {
+  height: 3px;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: var(--dark-color);
+}
+
+#content .header .subtitle {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  max-width: 80%;
+  height: 32px;
+  text-align: right;
+}
+
+#content .header .subtitle p {
+  display: initial;
+  padding-left: 10px;
+  background-color: var(--content-background-color);
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+#content .text h1 {
+  margin-top: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+#content .text h2 {
+  font-size: 1.8em;
+  color: var(--dark-color);
+}
+
+#content .text h3 {
+  font-size: 1.5em;
+  color: var(--dark-color);
+}
+
+#content .text h4 {
+  font-size: 1.2em;
+  color: var(--dark-color);
+}
+
+#content .text h5 {
+  font-size: 1em;
+  color: var(--dark-color);
+}
+
+#content .text li {
+  margin-bottom: 5px;
+}
+
+#content .text a {
+  color: var(--dark-color);
+}
+
+#content .text a:hover {
+  color: var(--light-color);
+}
+
+#content .text img {
+  width: 100%;
+  height: auto;
+}
+
+#content.about .card {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+#content.about .card .card-title {
+  font-weight: bold;
+}
+
+#questions {
+  margin-bottom: 20px;
+}
+
+#questions .question {
+  margin-bottom: 15px;
+}
+
+#questions .question .statement {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#questions .question .images {
+  margin: 0 -5px 15px;
+}
+
+#questions .question .image {
+  padding: 0 5px;
+}
+
+#questions .question .image p {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#questions .question .image img {
+  width: 100%;
+  height: 100%;
+}
+
+#questions .question .image.named img {
+  width: 100%;
+  height: calc(100% - 24px);
+}
+
+#questions .question .subquestions {
+  padding-top: 15px;
+}
+
+#questions .question .subquestions .question:last-of-type {
+  margin-bottom: 0;
+}
+
+#questions .question .subquestions .statement {
+  font-weight: normal;
+}
+
+#questions .question .option {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+#questions .question .option.correct {
+  color: green;
+}
+
+#questions .question .option.wrong {
+  color: red;
+}
+
+#questions .question .option.correct img,
+#questions .question .option.wrong img {
+  box-shadow: 0 0 5px;
+}
+
+#questions .finish {
+  text-align: center;
+}
+
+#questions .finish .btn {
+  color: #FFFFFF;
+  background-color: var(--dark-color);
+  padding: 10px 50px;
+  border: none;
+  outline: 0;
+}
+
+#questions .finish .btn:hover {
+  background-color: var(--light-color);
+}
+
+.about img {
+  width: 100%;
+}
+
+.about {
+  padding: 30px 0 90px;
+}
+
+@media (min-width: 768px) {
+  #content .text img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  #nav .dropdown-menu {
+    background-color: var(--dark-color);
+  }
+
+  #nav .dropdown-menu:after {
+    content: '';
+    position: absolute;
+    right: .25rem;
+    width: 0;
+    height: 0;
+    border-top: solid 10px var(--dark-color);
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+  }
+
+  #nav .dropdown-menu .dropdown-item:hover,
+  #nav .dropdown-menu .dropdown-item:focus,
+  #nav .dropdown-menu .dropdown-item:active {
+    background-color: var(--light-color);
+  }
+
+  #content {
+    padding: 30px 100px 90px;
+  }
+
+  #content.about {
+    padding: 30px 0 90px;
+  }
+
+  #content .text img {
+    width: 60%;
+  }
+}

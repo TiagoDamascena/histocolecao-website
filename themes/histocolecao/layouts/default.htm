@@ -1,0 +1,42 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ this.page.title }} | Histocoleção</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="Tiago Damascena">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Menu -->
+        <header id="layout-menu">
+            {% partial 'site/menu' %}
+        </header>
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/popper.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/font-awesome/js/fontawesome.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>

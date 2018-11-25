@@ -1,0 +1,53 @@
+<!-- Nav -->
+<div id="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-color fixed-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="{{ 'home'|page }}">
+                <img src="{{ 'assets/images/logo.png'|theme }}" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Exibir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ 'sobre'|page }}">A Histocoleção</a>
+                    </li>
+                    <li class="nav-item dropup">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-tecidos" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tecidos fundamentais
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menu-tecidos">
+                            <a class="dropdown-item" href="/tecidos-fundamentais/caracteristicas">Características</a>
+                            <a class="dropdown-item" href="/tecidos-fundamentais/laminas">Lâminas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropup" style="display: none">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-sistemas" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sistemas orgânicos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menu-sistemas">
+                            <a class="dropdown-item" href="/sistemas-organicos/caracteristicas">Características</a>
+                            <a class="dropdown-item" href="/sistemas-organicos/laminas">Lâminas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropup">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-atividades" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Atividades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menu-atividades">
+                            <a class="dropdown-item" href="/tecidos-fundamentais/atividades">Tecidos Fundamentais</a>
+                            <a class="dropdown-item" href="/sistemas-organicos/atividades">Sistemas Orgânicos</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+

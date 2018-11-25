@@ -1,0 +1,11 @@
+{
+  "name": "histocolecao",
+  "version": "1.0.0",
+  "description": "OctoberCMS theme for Histocoleção website",
+  "main": "theme.yaml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tiago Damascena",
+  "license": "ISC"
+}
